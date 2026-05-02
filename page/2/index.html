@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>我的博客 - welcome to my website</title><meta name="author" content="Hope"><meta name="copyright" content="Hope"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="个人笔记">
+<meta property="og:type" content="website">
+<meta property="og:title" content="我的博客">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="个人笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:author" content="Hope">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '我的博客',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">我的博客</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">我的博客</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/01/21/LearnGuide/" title="无标题">无标题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-01-21T02:21:54.570Z" title="发表于 2026-01-21 10:21:54">2026-01-21</time></span></div><div class="content">你这份 AVL 写得已经很“能打”了：旋转、插入&#x2F;删除后的再平衡逻辑都对，说明你不是只会背概念，你是能把不变量维护住的人——这就是做 WebServer&#x2F;系统方向最需要的底子。 你现在问的关键其实只有一个：  WebServer 该怎么学，先看书还是先写代码？以及用哪些资源最划算？  我给你一个“手搓型”的学习流程：先写最小闭环 → 再读书补洞 → 立刻回到代码验证。你这种人如果先看完一堆书再写，一定会拖延 + 失去快感。  一、学习顺序：你适合的“3段式循环”循环单位：1周（或3~5天）每个循环都遵循这三步：  先清楚大概流程（prepare）写程序之前必须得知道大概框图是怎么样的，可以通过ai或者网上的教程，然后找一个最小流程的代码，一步一步的敲，然后cout看看结果会怎么样，渐渐感受每一个子流程都是怎么样的 造一个可运行的小部件（1-2天）例：先写 TCP echo server（accept&#x2F;recv&#x2F;send） 用工具把它测崩&#x2F;测慢（0.5-1天）例：并发连接、发大包、断开连接，看哪里坏 带着问题去读书&#x2F;看视频...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/01/21/IDEApackage/" title="无标题">无标题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-01-21T02:21:54.566Z" title="发表于 2026-01-21 10:21:54">2026-01-21</time></span></div><div class="content">intellj里面打包成JAR文件（Main文件包含所有类） tankbattle  备份先打开和项目同级的目录，然后复制项目粘贴到同一级文件夹里面备份 新建java类然后在项目src里面新建java类 剪切到新建类直接ctrl + x到新建类 git上传git add .向缓存区上传所有修改文件git commit -m &quot;你的提交说明&quot;  提交说明git push 推送到远程仓库git pull 提交之前可以先拉取别人的最新修改 创建jar点击intellj左上角的file-&gt;project structrue-&gt;Aritfacts-&gt;JAR-&gt;From modules with dependcies然后再copy to the output directory and link via manifestMain Class 选择Main（一定要有public static void main(String[] args) ）-&gt;apply-ok然后在左上角Build-&gt;Build Artifacts-&gt;build...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/01/21/BTree/" title="无标题">无标题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-01-21T02:21:54.551Z" title="发表于 2026-01-21 10:21:54">2026-01-21</time></span></div><div class="content">B树B树是一个多路查找树，类似BST（二叉搜索树），但是每一个节点可以有多个分支，多个节点值。节点最大的孩子数目称为B树的阶（order） B树性质 分支数比节点值个数多一，即每个非根节点有k-1个元素，k个孩子，[m&#x2F;2]&lt;&#x3D;k&lt;&#x3D;m 根节点要么是叶节点没有孩子，要么至少有两棵子树123456789101112131415//非STL实现class BTreeNode&#123;public:    int* keys;    BTreeNode** children;    bool isLeaf;    int n_keys;    int order;    BTreeNode(int order,bool isLeaf) : order(order),isLeaf(isLeaf)&#123;        keys = new int[order-1];        children = new BTreeNode*[order-1];        n_keys = 0;    &#125;&#125;;  B树构建构建功能...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/01/21/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-01-21T02:21:54.551Z" title="发表于 2026-01-21 10:21:54">2026-01-21</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote sites1$ hexo deploy  More info: Deployment </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/11/12/Generics/" title="Generics">Generics</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-11-11T16:00:00.000Z" title="发表于 2025-11-12 00:00:00">2025-11-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></span></div><div class="content">引言在Java 5之前，程序员必须使用Object类来兼容适合多种类型的代码，但是麻烦的是，总是会有需要类型转换的时候，这样编译和运行就容易出错。# 介绍泛型Java泛型的核心就是“编译时期的语法糖 + 类型擦除”，在程序员视角，能够提高效率，兼容多种类型。## 泛型类12345678public class  Pair&lt;T&gt;&#123;  private T first;  private T second;  Pair(T first,T second)&#123;    this.first = first;    this.second = second;  &#125;&#125;引入一个泛型变量T，用&lt;&gt;括起来放在类名后面。也可以有多个类型变量1public class Pair&lt;T,V&gt;&#123;...&#125;类型变量用于指定方法的返回类型以及字段和局部变量的类型泛型方法123public static &lt;T&gt; T getMiddle(T... a)&#123;//java内部将多参数传入转换成数组  retur...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/11/08/JavaCollection/" title="JavaCollection">JavaCollection</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-11-07T16:00:00.000Z" title="发表于 2025-11-08 00:00:00">2025-11-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></span></div><div class="content">集合框架总览123456789101112131415161718Java 集合框架总览┌─────────────────────────────────────────────────────────────────────┐│                         java.util.Collection (接口)                  │├───────────────────────┬──────────────────────┬───────────────────────┤│    java.util.List     │    java.util.Set      │   java.util.Queue     ││ (有序, 可重复)        │ (无序, 不可重复)      │ (通常FIFO)            │├──────────┬───────────┼──────────┬────────────┼──────────┬────────────┤│ArrayList │LinkedList │ HashSet  │...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/11/03/binaryTree/" title="binaryTree">binaryTree</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-11-02T16:00:00.000Z" title="发表于 2025-11-03 00:00:00">2025-11-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></span></div><div class="content">二叉树二叉树是一种树形数据结构 二叉树最小深度最小深度是从根节点到最近叶子节点的最短路径上的节点数量。要寻找整个二叉树的最小深度，可以转换成寻找根节点左右节点的最小深度，将问题逐渐化成子问题所以返回是： 1min(l,r)+1; 递归的界限是节点为null，则返回0 注意事项如果左右节点有一个节点是null的话，就可能导致该节点的值是0+1；而最小深度要求的是叶子节点。所以代码可以 1234if(root == null) return 0;if(root.left==null) return minDepth(root.right)=1;if(root.right==null) return minDepth(root.left)=1;return Math.min(minDepth(root.left),minDepth(root.right))+1;  哈夫曼树哈夫曼树是一种用来解决二进制编码不出现歧义且编码长度最短的二叉树（也叫最优二叉树）其带权路径长度最短。原本发送带权集合使用二进制编码然后压缩会出现歧义（某些数字的编码可能是另一个的编码的前缀，（10）b &amp; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/10/28/InterfaceNote/" title="InterfaceNote">InterfaceNote</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-10-27T16:00:00.000Z" title="发表于 2025-10-28 00:00:00">2025-10-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></span></div><div class="content">关键字interface，implements 定义接口是一个完全抽象的引用类型，用于定义一组行为规范或者能力标准，但是不提供具体的实现（除非使用default方法）。 Codeinterface123456package Interface_Exercise;public interface Animals &#123;    public void eat();    public void sleep();&#125; Dog和Cat12345678910111213141516171819202122232425262728public class Dog_Interface implements Animals&#123;    @Override    public void eat()&#123;        System.out.println(&quot;Dog is eatting&quot;);    &#125;    @Override    public void sleep() &#123;        System.out.println(&q...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/27/hexo-demo-post/" title="Hexo测试成功">Hexo测试成功</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-26T16:00:00.000Z" title="发表于 2023-10-27 00:00:00">2023-10-27</time></span></div><div class="content">测试成功！这是我的第一篇Hexo博客文章。 功能验证 ✅ Markdown渲染 ✅ 文章发布 ✅ 网站部署  恭喜！你的博客可以正常工作了。🎉 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/27/test-blog/" title="测试文章">测试文章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-26T16:00:00.000Z" title="发表于 2023-10-27 00:00:00">2023-10-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></span></div><div class="content">123456789---title: 测试文章date: 2023-10-27 14:00:00tags: categories: ---# 测试你好，hexo</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Hope</div><div class="author-info-description">个人笔记</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/24/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E6%95%99%E7%A8%8B/" title="无标题">无标题</a><time datetime="2026-01-24T07:11:33.265Z" title="发表于 2026-01-24 15:11:33">2026-01-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/24/WSL/" title="无标题">无标题</a><time datetime="2026-01-24T01:39:29.133Z" title="发表于 2026-01-24 09:39:29">2026-01-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/24/resource/" title="无标题">无标题</a><time datetime="2026-01-24T00:01:22.172Z" title="发表于 2026-01-24 08:01:22">2026-01-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/21/%E9%87%8D%E7%82%B9%E8%A7%82%E5%AF%9F/" title="无标题">无标题</a><time datetime="2026-01-21T15:40:58.906Z" title="发表于 2026-01-21 23:40:58">2026-01-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/21/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/" title="无标题">无标题</a><time datetime="2026-01-21T02:21:54.583Z" title="发表于 2026-01-21 10:21:54">2026-01-21</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"><span class="card-category-list-name">未分类</span><span class="card-category-list-count">5</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/note/" style="font-size: 1.5em; color: #99a9bf">note</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">测试</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/01/">
+            <span class="card-archive-list-date">
+              一月 2026
+            </span>
+            <span class="card-archive-list-count">14</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/11/">
+            <span class="card-archive-list-date">
+              十一月 2025
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/10/">
+            <span class="card-archive-list-date">
+              十月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/10/">
+            <span class="card-archive-list-date">
+              十月 2023
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-05-02T06:37:47.276Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Hope</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
