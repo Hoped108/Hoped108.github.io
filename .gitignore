@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Hexo generated output and cache
+public/
+db.json
+.deploy_git/
+
+# Local environment
+.env
+.env.*
+
+# Codex/local assistant state
+.codex
+.codex/
+
+# Editor and OS metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Obsidian local workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Private notes and unpublished local material
+private/
+source/others/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
