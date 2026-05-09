@@ -1,5 +1,5 @@
 ---
-title: 零基础快速上手 NumPy 和 Pandas
+title: "numpy&pandas"
 date: 2026-05-02 00:00:00
 tags:
   - note

@@ -1,5 +1,5 @@
 ---
-title: "🎨 快速上手Matplotlib和Scanpy"
+title: "scanpy&matplotlib"
 date: 2026-05-02 14:48:18
 tags:
   - note

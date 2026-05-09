@@ -1,5 +1,5 @@
 ---
-title: "集合框架总览"
+title: "JavaCollection"
 date: 2026-05-02 14:48:18
 tags:
   - note

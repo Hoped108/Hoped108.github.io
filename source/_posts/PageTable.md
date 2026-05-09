@@ -1,5 +1,5 @@
 ---
-title: "page table"
+title: "PageTable"
 date: 2026-05-06 11:15:37
 tags:
   - note

@@ -1,5 +1,5 @@
 ---
-title: "WSL安装和使用"
+title: "WSL"
 date: 2026-05-02 14:48:18
 tags:
   - note

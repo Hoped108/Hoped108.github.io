@@ -1,5 +1,5 @@
 ---
-title: "二叉树"
+title: "binaryTree"
 date: 2026-05-02 14:48:18
 tags:
   - note

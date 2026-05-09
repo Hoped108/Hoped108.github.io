@@ -1,5 +1,5 @@
 ---
-title: "引言"
+title: "Generics"
 date: 2026-05-02 14:48:18
 tags:
   - note

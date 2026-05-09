@@ -1,5 +1,5 @@
 ---
-title: "viewing file"
+title: "Commands"
 date: 2026-05-07 17:52:18
 tags:
   - note

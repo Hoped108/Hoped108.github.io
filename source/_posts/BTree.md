@@ -1,5 +1,5 @@
 ---
-title: "B树"
+title: "BTree"
 date: 2026-05-02 14:48:18
 tags:
   - note

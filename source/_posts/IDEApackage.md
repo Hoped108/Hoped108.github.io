@@ -1,5 +1,5 @@
 ---
-title: "intellj里面打包成JAR文件（Main文件包含所有类）"
+title: "IDEApackage"
 date: 2026-05-02 14:48:18
 tags:
   - note
