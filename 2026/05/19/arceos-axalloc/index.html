@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>arceos-axalloc | 我的博客</title><meta name="author" content="Hope"><meta name="copyright" content="Hope"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="个人笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="arceos-axalloc">
+<meta property="og:url" content="http://example.com/2026/05/19/arceos-axalloc/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="个人笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2026-05-19T06:14:33.000Z">
+<meta property="article:modified_time" content="2026-06-19T13:32:57.206Z">
+<meta property="article:author" content="Hope">
+<meta property="article:tag" content="note">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "arceos-axalloc",
+  "url": "http://example.com/2026/05/19/arceos-axalloc/",
+  "image": "http://example.com/img/butterfly-icon.png",
+  "datePublished": "2026-05-19T06:14:33.000Z",
+  "dateModified": "2026-06-19T13:32:57.206Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hope",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2026/05/19/arceos-axalloc/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'arceos-axalloc',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">我的博客</span></a><a class="nav-page-title" href="/"><span class="site-name">arceos-axalloc</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">arceos-axalloc</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-19T06:14:33.000Z" title="发表于 2026-05-19 14:14:33">2026-05-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-06-19T13:32:57.206Z" title="更新于 2026-06-19 21:32:57">2026-06-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Hope</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2026/05/19/arceos-axalloc/">http://example.com/2026/05/19/arceos-axalloc/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">我的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/note/">note</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/05/24/Persistent/" title="Persistent"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">Persistent</div></div><div class="info-2"><div class="info-item-1">This post aim at recording the reading memory about OSTEP’s Persistent part. I&#x2F;O devicestandard deviceCombine with command register, status register and data register, the standard I&#x2F;O device have their own interface to communicate with system while this interface have their own protocols.The inner structure has some processor and other firmwares. use interrupt to decline the cpu expenseWhen a process send a request to device, this process could sleep until the device finishing the ...</div></div></div></a><a class="pagination-related" href="/2026/05/17/rcore-ch8/" title="rcore-ch8"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">rcore-ch8</div></div><div class="info-2"><div class="info-item-1">multi-threadWe can build a thread-management-runtime crate to implement the support of thread base on user mode.Thread is composed of thread-id,thread-status,current_PC,registers and stack,which is regarded as the basic unit of scheduling and dispatching for os or user mode(schedular).But the defect about the implement of user mode thread scheduler is that only the thread voluntarily give up the CPU can the thread-management-runtime check.  In the past few chapters, the each process has their...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/05/02/BTree/" title="BTree"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-02</div><div class="info-item-2">BTree</div></div><div class="info-2"><div class="info-item-1">B树B树是一个多路查找树，类似BST（二叉搜索树），但是每一个节点可以有多个分支，多个节点值。节点最大的孩子数目称为B树的阶（order） B树性质 分支数比节点值个数多一，即每个非根节点有k-1个元素，k个孩子，[m&#x2F;2]&lt;&#x3D;k&lt;&#x3D;m 根节点要么是叶节点没有孩子，要么至少有两棵子树123456789101112131415//非STL实现class BTreeNode&#123;public:    int* keys;    BTreeNode** children;    bool isLeaf;    int n_keys;    int order;    BTreeNode(int order,bool isLeaf) : order(order),isLeaf(isLeaf)&#123;        keys = new int[order-1];        children = new BTreeNode*[order-1];        n_keys = 0;    &#125;&#125;;  B树构建构建功能...</div></div></div></a><a class="pagination-related" href="/2026/05/07/Commands/" title="Commands"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-07</div><div class="info-item-2">Commands</div></div><div class="info-2"><div class="info-item-1">basicls list current fileuse the command -v ls would show the ls details,some like alias with color(auto) 1234ls -a # list all(some hidden file)ls -l # list as a line formatls -h # list with size as human readable formatls -s # list the file size =&gt; byte  cd, pipe is not a program.There are part of the bash program language.This command would change the current shell process work directory,if cd is a program would only change the sub process. similar: 1234exportaliasunsetulimit  Must speci...</div></div></div></a><a class="pagination-related" href="/2026/05/02/Generics/" title="Generics"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-02</div><div class="info-item-2">Generics</div></div><div class="info-2"><div class="info-item-1"> title: Genericsdate: 2025-11-12tags:  - notecategories: 未分类引言在Java 5之前，程序员必须使用Object类来兼容适合多种类型的代码，但是麻烦的是，总是会有需要类型转换的时候，这样编译和运行就容易出错。# 介绍泛型Java泛型的核心就是“编译时期的语法糖 + 类型擦除”，在程序员视角，能够提高效率，兼容多种类型。## 泛型类12345678public class  Pair&lt;T&gt;&#123;  private T first;  private T second;  Pair(T first,T second)&#123;    this.first = first;    this.second = second;  &#125;&#125;引入一个泛型变量T，用&lt;&gt;括起来放在类名后面。也可以有多个类型变量1public class Pair&lt;T,V&gt;&#123;...&#125;类型变量用于指定方法的返回类型以及字段和局部变量的类型泛型方法123public static &...</div></div></div></a><a class="pagination-related" href="/2026/06/19/Git/" title="Git"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-06-19</div><div class="info-item-2">Git</div></div><div class="info-2"><div class="info-item-1">This markdown intend to introduce the basic git commands. install and ssh configurationinstall the git and use: 1git --version  Then config the basic message. 12git config --global user.name &quot;你的名字&quot;git config --global user.email &quot;你的邮箱&quot;  And then build a Github account. 1ssh-keygen -t ed25519 -C &quot;你的GitHub邮箱&quot; It would create the ssh key 12~/.ssh/id_ed25519~/.ssh/id_ed25519.pub id_ed25519 is private key,and the pud is public key.Add the public key to the github accou...</div></div></div></a><a class="pagination-related" href="/2026/05/07/Hello_libos/" title="Hello_libos"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-07</div><div class="info-item-2">Hello_libos</div></div><div class="info-2"><div class="info-item-1">qemu start processBefore the qemu start,the rustc would compile the os file into ELF(configure by Cargo.toml) with linker.ld,which tells the linker to arrange the layout of the kernel file.Just like 1234.text [0x80200000, 0x80202000).rodata [0x80202000, 0x80203000).data [0x80203000, 0x80204000).bss [0x80214000, 0x80215000) Then qemu start a virtual RISC-V machine with CPU,memory,serial port, clock, interrupt controller, virt test equipment, and use the RustSBI.RustSBI is a firmware precede to...</div></div></div></a><a class="pagination-related" href="/2026/05/02/IDEApackage/" title="IDEApackage"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-05-02</div><div class="info-item-2">IDEApackage</div></div><div class="info-2"><div class="info-item-1">intellj里面打包成JAR文件（Main文件包含所有类） tankbattle  备份先打开和项目同级的目录，然后复制项目粘贴到同一级文件夹里面备份 新建java类然后在项目src里面新建java类 剪切到新建类直接ctrl + x到新建类 git上传git add .向缓存区上传所有修改文件git commit -m &quot;你的提交说明&quot;  提交说明git push 推送到远程仓库git pull 提交之前可以先拉取别人的最新修改 创建jar点击intellj左上角的file-&gt;project structrue-&gt;Aritfacts-&gt;JAR-&gt;From modules with dependcies然后再copy to the output directory and link via manifestMain Class 选择Main（一定要有public static void main(String[] args) ）-&gt;apply-ok然后在左上角Build-&gt;Build Artifacts-&gt;build...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Hope</div><div class="author-info-description">个人笔记</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">30</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/06/19/Git/" title="Git">Git</a><time datetime="2026-06-19T09:40:27.000Z" title="发表于 2026-06-19 17:40:27">2026-06-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/06/06/vim/" title="vim">vim</a><time datetime="2026-06-06T01:23:07.000Z" title="发表于 2026-06-06 09:23:07">2026-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/27/TruelyTired/" title="TruelyTired">TruelyTired</a><time datetime="2026-05-27T08:40:24.000Z" title="发表于 2026-05-27 16:40:24">2026-05-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/24/rcore-ch6/" title="rcore-ch6">rcore-ch6</a><time datetime="2026-05-24T08:56:55.000Z" title="发表于 2026-05-24 16:56:55">2026-05-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/24/Persistent/" title="Persistent">Persistent</a><time datetime="2026-05-24T06:35:16.000Z" title="发表于 2026-05-24 14:35:16">2026-05-24</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Hope</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
